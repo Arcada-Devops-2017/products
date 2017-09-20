@@ -17,6 +17,7 @@ Dokumentation för produkt APIs.
          "description":"pale lager beer",
          "category":"lager",
          "picture":"url",
+         "tags":"comma-separated-list"
       },
       {  
          "id":1,
@@ -24,27 +25,7 @@ Dokumentation för produkt APIs.
          "price":"2",
          "description":"Probably the best beer in the world",
          "category":"pilsner",
-         "picture":"url",
-      }
-   ]
-}
-```
-
-
-## Api Endpoint för att lägga till en produkt
-
-[http://products.arcada.nitor.zone/api/add-product.php](http://products.arcada.nitor.zone/api/add-product.php)
-```JSON
-{  
-   "status":200,
-   "products":[  
-      {  
-         "id":0,
-         "name":"Heineken",
-         "price":"2",
-         "description":"pale lager beer",
-         "category":"lager",
-         "picture":"url",
+         "tags":"comma-separated-list"
       }
    ]
 }
@@ -67,6 +48,7 @@ Behöver parametern "search" (search term). Söker igenom namn och description e
          "description":"pale lager beer",
          "category":"lager",
          "picture":"url",
+         "tags":"comma-separated-list"
       },
       {  
          "id":1,
@@ -75,6 +57,7 @@ Behöver parametern "search" (search term). Söker igenom namn och description e
          "description":"Probably the best beer in the world",
          "category":"pilsner",
          "picture":"url",
+         "tags":"comma-separated-list"
       }
    ]
 }
