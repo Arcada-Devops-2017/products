@@ -1,6 +1,6 @@
 # products
 
-Dokumentation för produk APIs.
+Dokumentation för produkt APIs.
 
 
 ## Api Endpoint för att lista alla produkter
@@ -30,6 +30,8 @@ Dokumentation för produk APIs.
 }
 ```
 
+
+## Api Endpoint för att lägga till en produkt
 
 [http://products.arcada.nitor.zone/api/add-product.php](http://products.arcada.nitor.zone/api/add-product.php)
 ```JSON
