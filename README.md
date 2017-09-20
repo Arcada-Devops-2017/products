@@ -38,7 +38,7 @@ Accepterar parametrar för sorterad listning. Sortering tillåts enligt namn, pr
 
 Behöver parametern "search" (search term). Söker igenom namn och description efter söktermen och listar ut resultaten. Ersätt space med "+".
 
-[http://products.arcada.nitor.zone/api/search.php?search="lager+beer"](http://products.arcada.nitor.zone/api/search.php?search="lager-beer")
+[http://products.arcada.nitor.zone/api/search.php?search="lager+beer"](http://products.arcada.nitor.zone/api/search.php?search="lager+beer")
 ```JSON
 {  
    "status":200,
