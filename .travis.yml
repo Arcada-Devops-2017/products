@@ -1,2 +1,1 @@
-before_install:
-    - sudo apt-get ansible
+language: node_js
