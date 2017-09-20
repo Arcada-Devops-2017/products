@@ -5,7 +5,9 @@ Dokumentation för produkt APIs.
 
 ## Api Endpoint för att lista alla produkter
 
-[http://products.arcada.nitor.zone/api/list-products.php](http://products.arcada.nitor.zone/api/list-products.php)
+Accepterar parametrar för sorterad listning. Sortering tillåts enligt namn, pris och kategori. En URL utan parametrar listar alla produkter enligt id.
+
+[http://products.arcada.nitor.zone/api/list-products.php?sort="name"](http://products.arcada.nitor.zone/api/list-products.php?sort="name")
 ```JSON
 {  
    "status":200,
