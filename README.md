@@ -5,7 +5,7 @@ Dokumentation för produk APIs.
 
 ## Api Endpoint för att lista alla produkter
 
-[http://products.arcada.nitor.zone/api/stores.php](http://stores.arcada.nitor.zone/api/stores.php)
+[http://products.arcada.nitor.zone/api/products.php](http://products.arcada.nitor.zone/api/products.php)
 ```JSON
 {  
    "status":200,
