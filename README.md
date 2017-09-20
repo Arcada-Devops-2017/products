@@ -13,8 +13,8 @@ Dokumentation för produk APIs.
       {  
          "id":0,
          "name":"Heineken",
-         "price":"2";
-         "description":"pale lager beer";
+         "price":"2",
+         "description":"pale lager beer",
          "category":"lager",
          "picture":"url",
       },
