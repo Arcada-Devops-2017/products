@@ -1,3 +1,24 @@
 # products
 
-We need to fix everything.
+Dokumentation för produk APIs.
+
+
+## Api Endpoint för att lista alla produkter
+
+[http://products.arcada.nitor.zone/api/stores.php](http://stores.arcada.nitor.zone/api/stores.php)
+```JSON
+{  
+   "status":200,
+   "products":[  
+      {  
+         "id":0,
+         "name":"Heineken",
+         "price":"2";
+         "description":"pale lager beer";
+         "category":"lager",
+         "picture":"url",
+      },
+      ...
+   ]
+}
+```
