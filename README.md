@@ -7,7 +7,7 @@ Dokumentation för produkt APIs.
 
 Accepterar parametrar för sorterad listning. Sortering tillåts enligt namn, pris och kategori. En URL utan parametrar listar alla produkter enligt id.
 
-[http://products.arcada.nitor.zone/api/list-products.php?sort="name"](http://products.arcada.nitor.zone/api/list-products.php?sort="name")
+[http://product.arcada.nitor.zone/api/list-products.php?sort="name"](http://product.arcada.nitor.zone/api/list-products.php?sort="name")
 ```JSON
 {  
    "status":200,
@@ -37,7 +37,7 @@ Accepterar parametrar för sorterad listning. Sortering tillåts enligt namn, pr
 
 APIn kräver id parameter.
 
-[http://products.arcada.nitor.zone/api/products.php?id=0](http://products.arcada.nitor.zone/api/products.php?id=0)
+[http://product.arcada.nitor.zone/api/products.php?id=0](http://product.arcada.nitor.zone/api/products.php?id=0)
 ```JSON
 {  
    "status":200,
@@ -57,7 +57,7 @@ APIn kräver id parameter.
 
 ## Api om produkten inte är specifierad
 
-[http://products.arcada.nitor.zone/api/products.php?id=""](http://products.arcada.nitor.zone/api/products.php?id="")
+[http://product.arcada.nitor.zone/api/products.php?id=""](http://product.arcada.nitor.zone/api/products.php?id="")
 ```JSON
 {
    "status": "400",
@@ -71,7 +71,7 @@ APIn kräver id parameter.
 
 Behöver parametern "search" (search term). Söker igenom namn och description efter söktermen och listar ut resultaten. Ersätt space med "+".
 
-[http://products.arcada.nitor.zone/api/search.php?search="lager+beer"](http://products.arcada.nitor.zone/api/search.php?search="lager+beer")
+[http://product.arcada.nitor.zone/api/search.php?search="lager+beer"](http://product.arcada.nitor.zone/api/search.php?search="lager+beer")
 ```JSON
 {  
    "status":200,
@@ -100,7 +100,7 @@ Behöver parametern "search" (search term). Söker igenom namn och description e
 
 ## Api om sökfältet tomt
 
-[http://products.arcada.nitor.zone/api/search.php?search=""](http://products.arcada.nitor.zone/api/search.php?search="")
+[http://product.arcada.nitor.zone/api/search.php?search=""](http://product.arcada.nitor.zone/api/search.php?search="")
 ```JSON
 {
    "status": "400",
