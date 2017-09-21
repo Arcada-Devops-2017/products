@@ -64,3 +64,13 @@ Behöver parametern "search" (search term). Söker igenom namn och description e
    ]
 }
 ```
+
+## Api om sökfältet tomt
+
+[http://products.arcada.nitor.zone/api/search.php?search=""](http://products.arcada.nitor.zone/api/search.php?search="")
+```JSON
+{
+   "status": "400",
+   "message": "Search field is empty!"
+}
+```
