@@ -12,7 +12,7 @@ before_deploy:
 deploy:
 - provider: script
   skip_cleanup: true
-  script: ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -tt -i devots
+  script: ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -tt -i devops
     ubuntu@products.arcada.nitor.zone /home/ubuntu/update.sh
   on:
     branch: master
