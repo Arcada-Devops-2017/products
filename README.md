@@ -33,6 +33,39 @@ Accepterar parametrar för sorterad listning. Sortering tillåts enligt namn, pr
 }
 ```
 
+## Api Endpoint för att lista en produkt
+
+APIn kräver id parameter.
+
+[http://products.arcada.nitor.zone/api/products.php?id=0](http://products.arcada.nitor.zone/api/products.php?id=0)
+```JSON
+{  
+   "status":200,
+   "products":[  
+      {  
+         "id":0,
+         "name":"Heineken",
+         "price":"2",
+         "description":"pale lager beer",
+         "category":"lager",
+         "picture":"url",
+         "tags":"comma-separated-list"
+      }
+   ]
+}
+```
+
+## Api om produkten inte är specifierad
+
+[http://products.arcada.nitor.zone/api/products.php?id=""](http://products.arcada.nitor.zone/api/products.php?id="")
+```JSON
+{
+   "status": "400",
+   "message": "Product not specified"
+}
+```
+
+
 
 ## Api Endpoint för att söka efter produkter
 
