@@ -7,7 +7,7 @@ Install: true
 script: true
 before_deploy:
 - openssl aes-256-cbc -K $encrypted_a7742cc05c8e_key -iv $encrypted_a7742cc05c8e_iv
-  - in devops.enc -out devops -d
+- in devops.enc -out devops -d
 - chmod 600 devops
 deploy:
 - provider: script
