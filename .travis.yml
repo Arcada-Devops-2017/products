@@ -8,7 +8,7 @@ script: true
 before_deploy:
 - openssl aes-256-cbc -K $encrypted_a7742cc05c8e_key -iv $encrypted_a7742cc05c8e_iv
   - in devops.enc -out devops -d
-  - chmod 600 devops
+  - chmod 600 products
 deploy:
 - provider: script
   skip_cleanup: true
