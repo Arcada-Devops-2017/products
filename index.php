@@ -2,7 +2,7 @@
 
 
 <?php
-$servername = "localhost";
+$servername = "172.16.0.80";
 $username = "root";
 $password = "";
 
