@@ -1,4 +1,5 @@
 <?php
+header('Content-Type: application/json; charset=utf-8');
 require_once("DB.php");
 $db = new DB("127.0.0.1", "products", "products", "products");
 if ($_SERVER['REQUEST_METHOD'] == "GET") {
