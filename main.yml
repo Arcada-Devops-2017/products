@@ -1,0 +1,65 @@
+---
+- name: Install packages
+  apt:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - apache2
+    - openjdk-8-jre
+
+- name: Enable apache proxy modules
+  register: apache_mods
+  apache2_module:
+    state: present
+    name: "{{ item }}"
+  with_items:
+    - proxy
+    - proxy_http
+
+- name: Configure apache
+  register: apache_conf
+  copy:
+    src: apache_vhost
+    dest: /etc/apache2/sites-enabled/demo.conf
+
+- name: Restart apache
+  when: apache_conf.changed or apache_mods.changed
+  service:
+    name: apache2
+    state: restarted
+
+- name: Start apache
+  service:
+    name: apache2
+    state: started
+    enabled: yes
+
+- name: Upload systemd service file
+  copy:
+    src: JavaApp.service
+    dest: /etc/systemd/system/JavaApp.service
+    owner: root
+    group: root
+    mode: 0644
+
+- name: Upload restart script
+  copy:
+    src: restartApp.sh
+    dest: /home/ubuntu/restartApp.sh
+    owner: ubuntu
+    group: ubuntu
+    mode: 0700
+
+- user:
+    name: products
+    comment: "products"
+    uid: 1337
+
+- name: Set up authorized keys 
+    authorized_key: 
+        user: ubuntu
+        state: present 
+        key: '{{ item }}' 
+    with_file: 
+        - sshkey.pub 
+        
