@@ -1,6 +1,5 @@
 <?php
-header('Content-Type: application/json; charset=utf-8');
-require_once("DB.php");
+require_once("db.php");
 $db = new DB("127.0.0.1", "products", "products", "products");
 if ($_SERVER['REQUEST_METHOD'] == "GET") {
         echo json_encode($db->query("SELECT * FROM products"));
