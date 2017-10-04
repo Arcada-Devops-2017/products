@@ -1,5 +1,5 @@
 <?php
-require_once(“db.php");
+require_once("db.php");
 $id = $_GET[‘id’]; 
 $db = new DB("localhost", "products", "products", "products");
 if ($_SERVER['REQUEST_METHOD'] == "GET") {
