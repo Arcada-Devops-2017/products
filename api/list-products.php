@@ -3,8 +3,7 @@ $sort = $_GET[“sort”];
 require_once("db.php");
 $db = new DB("localhost", "products", "products", "products");
 if ($_SERVER['REQUEST_METHOD'] == "GET") {
-	if ($sort != “”){
-echo “1”;
+	if (isset($_GET[‘sort’])){
 		echo json_encode($db->query("SELECT * FROM products ORDER BY " .$sort),JSON_UNESCAPED_SLASHES);
 	}
 	else {
